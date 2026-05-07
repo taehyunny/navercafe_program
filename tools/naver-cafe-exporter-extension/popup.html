@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Naver Cafe Exporter</title>
+    <link rel="stylesheet" href="styles/popup.css">
+  </head>
+  <body>
+    <main class="popup-shell">
+      <header class="popup-header">
+        <h1>Naver Cafe Exporter</h1>
+        <p id="statusText">Open a Naver Cafe post list, then collect and document the visible posts.</p>
+      </header>
+
+      <section class="button-row" aria-label="actions">
+        <button id="collectButton" type="button">Collect</button>
+        <button id="documentButton" type="button" disabled>Document</button>
+        <button id="downloadJsonButton" type="button" disabled>JSON</button>
+        <button id="downloadCsvButton" type="button" disabled>CSV</button>
+        <button id="downloadMarkdownButton" type="button" disabled>MD</button>
+        <button id="downloadFilesButton" type="button" disabled>Files</button>
+      </section>
+
+      <section class="summary-panel" aria-label="summary">
+        <span>Count</span>
+        <strong id="postCount">0</strong>
+      </section>
+
+      <section class="log-panel" aria-label="logs">
+        <h2>Run Log</h2>
+        <ol id="logList"></ol>
+      </section>
+    </main>
+
+    <script src="src/shared/logger.js"></script>
+    <script src="src/popup/exporter.js"></script>
+    <script src="src/popup/articleFetcher.js"></script>
+    <script src="src/popup/popup.js"></script>
+  </body>
+</html>
