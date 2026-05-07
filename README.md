@@ -16,6 +16,7 @@ tools/naver-cafe-exporter-extension
 
 - [한글 사용법 문서](tools/naver-cafe-exporter-extension/docs/사용법.md)
 - [설계 문서](tools/naver-cafe-exporter-extension/docs/design.md)
+- [구현 정리 문서](tools/naver-cafe-exporter-extension/docs/구현정리.md)
 
 ## 주요 기능
 
